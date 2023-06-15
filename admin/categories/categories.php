@@ -1,7 +1,8 @@
 <h1>Категорий</h1>
 <?php 
     require_once "../../connect.php";
-    require_once "../../head.php";    
+    require_once "../../head_admin.php";    
+    require_once "../../admin_access.php";    
 ?>
 <a href="../../index.php">Назад</a>
 <a href="categories_add_page.php"> Добавить категорию </a>

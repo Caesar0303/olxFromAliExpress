@@ -1,7 +1,8 @@
 <h1>Города</h1>
 <?php 
-    require_once '../../head.php';
     require_once '../../connect.php';
+    require_once '../../head_admin.php';
+    require_once "../../admin_access.php"; 
 
     $cities = mysqli_query($connect, "SELECT * FROM cities");
     $cities = mysqli_fetch_all($cities);

@@ -8,12 +8,8 @@
     if (isset($_SESSION['user'])) {
         $login = $_SESSION['user'];
         $id = mysqli_query($connect, "SELECT id FROM users WHERE login = '$login'");
-    }
-    
-    if ($_SESSION['user'] == NULL) {
-        header ('Location: authAndReg/auth.php');
+        $id = mysqli_fetch_all($id);
+        $id = $id[0][0];
     }
 
-    $id = mysqli_fetch_all($id);
-    $id = $id[0][0];
 ?>

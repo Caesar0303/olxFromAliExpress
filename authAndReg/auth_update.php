@@ -18,6 +18,8 @@
                         $_SESSION['admin'] = 0;
                         $text = "Вы зашли как пользователь";
                     }
+                    var_dump($_SESSION['user']);
+                    var_dump($_SESSION['admin']);
                     header('Location: ../index.php');
                 }
             } else {

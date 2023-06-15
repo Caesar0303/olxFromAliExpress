@@ -1,12 +1,13 @@
 <h1>Добавления подкатегорий</h1>
 <?php 
     require_once "../../connect.php";
-    require_once "../../head.php";
+    require_once '../../head_admin.php';
+    require_once "../../admin_access.php"; 
     $subcategories = mysqli_query($connect, "SELECT * FROM subcategories");
     $subcategories = mysqli_fetch_all($subcategories);
 ?>
+    <a href="../../index.php">Назад</a>
     <a href="subcategories_add_page.php">Добавить</a>
-    <a href="subcategories.php?id=<?= $_SESSION['category_id'] ?>">Назад</a>
     <div class="table_wrapper table-responsive">
         <table>
         <tbody class="table table-striped table-bordered table-hover">
@@ -35,7 +36,7 @@
                 <td><?= $category ?></td>
                 <td><?= $subcategory[2] ?></td>
                 <td><?= '<a href="subcategories_delete.php?id='.$subcategory[0].'">Удалить</a>' ?></td>
-                <td><?= '<a href="subcategories_update_page.php?id='.$subcategory[0].'"> Изменить </a>' ?></td>
+                <td><?= '<a href="subcategories_update_page.php?id='.$subcategory[0].'&category_id='.$subcategory[1].'"> Изменить </a>' ?></td>
             </tr>
             <?php } ?>
         </tbody>

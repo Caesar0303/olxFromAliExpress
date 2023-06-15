@@ -1,5 +1,6 @@
 <?php 
     require_once "../../connect.php";
+    require_once "../../admin_access.php"; 
 
     var_dump($_POST['name']);
     var_dump($_POST['category_id']);
@@ -9,6 +10,6 @@
         $id = $_POST['category_id'];
         mysqli_query($connect, "INSERT INTO subcategories (name, categories_id) VALUES ('$name', '$id');
         ");
-        header("Location: subcategories.php");
+        // header("Location: subcategories.php");
     }
 ?>

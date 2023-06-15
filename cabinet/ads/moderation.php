@@ -6,7 +6,7 @@
     } else {
         require_once "../../head.php";
     }
-    $ads = mysqli_query($connect, "SELECT * FROM ad WHERE moderation = 1");
+    $ads = mysqli_query($connect, "SELECT * FROM ad WHERE moderation = 0");
     $ads = mysqli_fetch_all($ads);
     ?>
 <a href="../../index.php">Назад</a>
@@ -37,9 +37,9 @@
             echo 'Цена: ';
             echo $ad[7] . "T";
             echo '<br>';
-            echo 'Просмотры: ';
-            echo $ad[9];
             echo '<a href="ad_page.php?ad_id='.$ad_id.'">Посмотреть объявление</a>';
+            echo '<a href="moderation_true.php?ad_id='.$ad_id.'">Одобрить объявления</a>';
+            echo '<a href="ad_delete.php?ad_id='.$ad_id.'">Удалить объявления</a>';
             echo '</div>';
         }
 

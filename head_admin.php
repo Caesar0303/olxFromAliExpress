@@ -58,24 +58,27 @@
 </style>
 <body>
 <?php 
-    if ($_SESSION['user'] == NULL) {
-        echo '<div class="menu">';
-        echo '<ul>';
-        echo '<li><a href="/cabinet/ads/all_ads.php">Посмотреть все объявления</a></li>';
-        echo '</ul>';
-        echo '</div>';
-    } else {
+    if($_SESSION['admin'] == 1) {
 ?>
 <div class="menu">
         <ul>
             <li><a href="/exit.php">Выйти</a></li>
-            <li><a href="/cabinet/ads/my_ads.php">Мои объявления</a></li>
-            <li><a href="/cabinet/ads/ads_category_choose.php">Создать объявление</a></li>
+            <li><a href="/admin/categories/categories.php">Категорий</a></li>
+            <li><a href="/admin/subcategories/subcategories.php">Подкатегорий</a></li>
+            <li><a href="/admin/cities/cities.php">Города</a></li>
+            <li><a href="/cabinet/ads/moderation.php">Модерация</a></li>
             <li><a href="/cabinet/ads/all_ads.php">Все объявления</a></li>
         </ul>
 </div>
+<?php
+    } 
+    elseif ($_SESSION['user'] == NULL) {
+?>
 <?php 
+    echo '<div class="menu">';
+    echo '<ul>';
+    echo '<li><a href="/cabinet/ads/all_ads.php">Посмотреть все объявления</a></li>';
+    echo '</ul>';
+    echo '</div>';
     }
 ?>
-
-

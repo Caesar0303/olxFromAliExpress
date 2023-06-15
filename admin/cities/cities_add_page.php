@@ -1,6 +1,9 @@
+<h1>Добавить город</h1>
 <?php 
-    require_once '../../head.php';
     require_once '../../connect.php';
+    require_once "../../head_admin.php";    
+    require_once "../../admin_access.php"; 
+
 ?>
 
 <form action="cities_add.php" method="POST">
@@ -9,5 +12,5 @@
 <a href="cities.php">Назад</a>
 
 <?php 
-    require_once '../../../foot.php';
+    require_once '../../foot.php';
 ?>

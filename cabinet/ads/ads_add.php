@@ -21,8 +21,8 @@
     var_dump($subcategory_id);
     var_dump($current_date);
 
-    mysqli_query($connect, "INSERT INTO ad (city_id, name, category_id, subcategory_id, description, create_at, cost, contacts, views, user_id) 
-    VALUES ('$city_id', '$name', '$category_id', '$subcategory_id', '$description', '$current_date', '$cost', '$contacts', 0, '$user_id')");
+    mysqli_query($connect, "INSERT INTO ad (city_id, name, category_id, subcategory_id, description, create_at, cost, contacts, views, user_id, moderation) 
+    VALUES ('$city_id', '$name', '$category_id', '$subcategory_id', '$description', '$current_date', '$cost', '$contacts', 0, '$user_id', 0)");
 
     $insertedId = mysqli_insert_id($connect); // Получаем идентификатор только что вставленной записи
 

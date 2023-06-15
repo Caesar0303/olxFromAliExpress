@@ -31,5 +31,6 @@
         </form>
         Нету аккаунта?
         <a href="reg.php">Зарегистрироваться</a>
+        <a href="../index.php">Войти без авторизаций</a>
     </div>  
 <?php require_once '../foot.php'; ?>

@@ -1,7 +1,8 @@
 <h1>Изменить название города</h1>
 <?php 
-    require_once '../../head.php';
     require_once '../../connect.php';
+    require_once '../../head_admin.php';
+    require_once "../../admin_access.php"; 
 
     $city_name = mysqli_query($connect, "SELECT name FROM cities WHERE id = {$_GET['id']}");
     $city_name = mysqli_fetch_all($city_name);

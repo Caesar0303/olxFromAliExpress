@@ -11,7 +11,11 @@
     body{
         background:#F0F8FF;
     }
-
+    .forms_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 </style>
 <body>
 <br>
@@ -29,5 +33,6 @@
         </form>
         Уже есть аккаунт?
         <a href="auth.php">Авторизация</a>
+        <a href="../index.php">Войти без регистраций</a>
     </div>  
 <?php require_once '../foot.php'; ?>

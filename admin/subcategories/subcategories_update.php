@@ -1,5 +1,6 @@
 <?php 
-    require_once "../../connect.php";    
+    require_once "../../connect.php";  
+    require_once "../../admin_access.php";   
 ?>
 <?php
     var_dump($_POST['name']);
