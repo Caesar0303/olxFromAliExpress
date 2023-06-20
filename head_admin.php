@@ -8,6 +8,10 @@
     <title>Olx</title>
 </head>
 <style>
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
     .ad_page{
         background: #fff;
         display: flex;
@@ -54,6 +58,25 @@
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        align-items: flex-end;
+    }
+    .active {
+        text-decoration: none;
+        color: black;
+    }
+    .nonactive {
+        pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+        text-decoration: none;
+        color: black;
     }
 </style>
 <body>

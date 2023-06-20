@@ -16,7 +16,7 @@
     require 'ad_info.php';
     $imagePath1 = $image[1][0];
     $imagePath2 = $image[2][0];
-    echo '<a href="all_ads.php">Назад</a>';
+    echo '<a href="moderation.php">Назад</a>';
     echo '<div class = "ad_page">';
     echo '<div class = "images">';
     echo '<img src="../../images/' . $imagePath . '" alt="Изображение объявления" width="300px">';

@@ -11,5 +11,4 @@
         $id = mysqli_fetch_all($id);
         $id = $id[0][0];
     }
-
 ?>

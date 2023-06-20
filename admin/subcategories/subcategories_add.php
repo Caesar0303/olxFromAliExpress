@@ -10,6 +10,6 @@
         $id = $_POST['category_id'];
         mysqli_query($connect, "INSERT INTO subcategories (name, categories_id) VALUES ('$name', '$id');
         ");
-        // header("Location: subcategories.php");
+        header("Location: subcategories.php");
     }
 ?>

@@ -37,9 +37,9 @@
             echo 'Цена: ';
             echo $ad[7] . "T";
             echo '<br>';
-            echo '<a href="ad_page.php?ad_id='.$ad_id.'">Посмотреть объявление</a>';
+            echo '<a href="moderation_ad_page.php?ad_id='.$ad_id.'">Посмотреть объявление</a>';
             echo '<a href="moderation_true.php?ad_id='.$ad_id.'">Одобрить объявления</a>';
-            echo '<a href="ad_delete.php?ad_id='.$ad_id.'">Удалить объявления</a>';
+            echo '<a href="moderation_false.php?ad_id='.$ad_id.'">Удалить объявления</a>';
             echo '</div>';
         }
 

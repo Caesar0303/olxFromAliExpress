@@ -8,9 +8,9 @@
         <br>
         <input type="file" name="file" required>
         <br>
-        <input type="file" name="file2">
+        <input type="file" name="file1">
         <br>
-        <input type="file" name="file3">
+        <input type="file" name="file2">
         <br>
         <input type="hidden" name="ad_id" value="<?= $_GET['ad_id'] ?>">
         <button>Загрузить</button>
