@@ -61,12 +61,12 @@
     }
     .pagination {
         display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        align-items: flex-end;
     }
     .active {
         text-decoration: none;
